@@ -347,29 +347,45 @@ function displayProductDetails(product) {
 
 
       <div class="profile-container">
-      <div class="banner" style="background-image: url('${product.foto}');"></div>
+      <div class="banner" style="background-image: url('${product.foto}');">
+      <div class="banner-tit">
+              <h2>${product.nama}</h2>
+              <p>${product.kelas} ${product.jurusan}</p>
+            </div>
+            <section>
+            <div class="scroll text1">
+               <div>
+                    Special Offer!<span> Blah Blah Blah Blah! </span>Special Offer!<span> Blah Blah Blah Blah! Blah!</span>
+               </div>
+               <div>
+                    Special Offer!<span> Blah Blah Blah Blah! </span>Special Offer!<span>Blah Blah Blah Blah! Blah! </span>
+               </div>
+            </div>
+        <div class="scroll text2">
+               <div>
+                    Special Offer!<span> Blah Blah Blah Blah! Blah!</span>Special Offer!<span> Blah Blah Blah Blah! Blah!</span>
+               </div>
+               <div>
+                    Special Offer!<span> Blah Blah Blah Blah! Blah!</span>Special Offer!<span>Blah Blah Blah Blah! Blah!</span>
+               </div>
+            </div>
+          </section>
+      </div>
       <img src="${product.foto}" alt="${product.nama}" alt="Profile Picture" class="profile-pic" onerror="this.onerror=null;this.src='https://via.placeholder.com/150';">
       <div class="profile-info">
       <h3>${product.nama}</h3>
+      <p>${product.deskripsi}</p>
       <div class="con-share">
       <button class="share-button">
           <i class="fas fa-share"></i> Share
       </button>
   </div>
-  <p>${product.deskripsi}</p>
+
   </div>
      
           </div>
           <div class="main">
           <div class="container-row">
-            <div class="row">
-              <h2> Kelas</h2>
-              <p>${product.kelas}</p>
-            </div>
-            <div class="row">
-              <h2> Jurusan</h2>
-              <p>${product.jurusan}</p>
-            </div>
           </div>
           <div class="container-row">
             <div class="row">
@@ -396,10 +412,6 @@ function displayProductDetails(product) {
             </div>
           </div>
           <div class="container-row">
-            <div class="row">
-              <h2>Deskripsi</h2>
-              <p>${product.deskripsi}</p>
-            </div>
             <div class="row">
               <h2>Barcode</h2>
               <img src="barcode.png" alt="" srcset="">

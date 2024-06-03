@@ -420,10 +420,70 @@ body {
 .product-details-new:before {}
 
 
+section{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+section .scroll{
+  width: 100%;
+  display: flex;
+}
+
+section .scroll div{
+  color: #000;
+  font-size: 4em;
+  background: rgba(255, 255, 255, 0.242);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  white-space: nowrap;
+  font-weight: 900;
+  text-transform: uppercase;
+  animation: animate 40s linear infinite;
+  animation-delay: -40s;
+}
+
+section .scroll div:nth-child(2){
+  animation: animate2 40s linear infinite;
+  animation-delay: -20s;
+}
+
+section .scroll div span{
+  -webkit-text-stroke: 2px #000;
+  color: transparent;
+}
+
+@keyframes animate{
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animate2{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-200%);
+  }
+}
+
+section .scroll.text1{
+  transform: rotate(30deg) translateY(200px) translateX(-200px);
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  width: 100%;
+}
 
 .profile-container {
-  background-color: #000000;
+  background-color: #101010;
+  padding-bottom: 10px;
   width: 100%;
+  margin-bottom: 20px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -431,22 +491,46 @@ body {
 .banner {
   background-image: url('https://i.pinimg.com/564x/8c/85/a9/8c85a98a445d87ec6d8c3a84fd7985cc.jpg');
   background-size: cover;
-  height: 150px;
-  filter: blur(10px);
-  -webkit-filter: blur(10px);
+  height: 250px;
+  backdrop-filter: blur(10px);
+  filter: saturate(0%);
 }
 
-.banner img {
-  filter: blur(10px);
-  -webkit-filter: blur(10px);
+.banner-tit {
+  background-color: rgba(0, 0, 0, 0.729);
+  backdrop-filter: blur(5px);
+  padding: 10px 30px;
+  display: inline-block;
+  border-radius: 50px 0px 0px 50px;
+  -webkit-border-radius: 50px 0px 0px 50px;
+  -moz-border-radius: 50px 0px 0px 50px;
+  z-index: 9;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  margin-bottom: 10px;
 }
+
+.banner-tit:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.banner-tit h2 {
+  color: #fff;
+  font-size: 14px;
+}
+
+.banner-tit p {
+  font-size: 12px;
+}
+
 
 .profile-pic {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  border: 4px solid #2c2f33;
-  left: 50%;
+  border: 4px solid #101010;
+  left:20%;
   transform: translateX(-50%);
   position: relative;
   object-fit: cover;
@@ -456,7 +540,8 @@ body {
 
 .profile-info {
   padding: 15px;
-  text-align: center;
+  margin-left: 20px;
+  text-align: left;
 }
 
 .profile-info h2,
@@ -974,10 +1059,7 @@ article {}
 
 
 
-.main {
-  display: flex;
-  flex-flow: column;
-  text-align: center;
+.main {  
 }
 
 .main h3 {
@@ -992,22 +1074,14 @@ article {}
 }
 
 .container-row {
-  display: flex;
-  justify-content: flex-end;
-  /* Mengubah dari space-around menjadi flex-start */
+  display: inline-flex;
+  margin: 0px 8px;
   text-align: left;
-  padding: 10px;
-margin: 5px;
-  border-radius: 5px;
-  overflow: hidden;
 }
 
 .row {
-  display: flex;
-  flex-direction: column;
-    width: 100%;
+  margin: 5px;
     background-color: #101010;
-    margin: 4px;
     border-radius: var(--border);
     padding: 10px;
   }
@@ -1071,17 +1145,15 @@ li {
 }
 
 .share-button {
-  margin: 20px;
+  width: 100%;
+  margin: 20px 0px;
   background-color: white;
   color: #333;
-  border: 2px solid #333;
+  border: none;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 10px;
     border-radius: 50px;
     font-family: Roboto;
     transition: background-color 0.3s, color 0.3s;
