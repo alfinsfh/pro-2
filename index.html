@@ -174,7 +174,7 @@
             stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" /></svg>
         <span>Home</span>
       </div>
-      <div class="tab" data-tab="categories" style="display: none;">
+      <div class="tab" data-tab="categories" style="display: ;">
         <?xml version="1.0" ?><svg fill="none" height="24" stroke-width="1.5" viewBox="0 0 24 24" width="24"
           xmlns="http://www.w3.org/2000/svg">
           <path
@@ -182,7 +182,7 @@
             stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" /></svg>
         <span>Recipes</span>
       </div>
-      <div class="tab" data-tab="search" style="display: ;">
+      <div class="tab" data-tab="search" style="display: none;">
         <?xml version="1.0" ?><svg fill="none" height="24" stroke-width="1.5" viewBox="0 0 24 24" width="24"
           xmlns="http://www.w3.org/2000/svg">
           <path d="M15.5 15.5L19 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
@@ -301,6 +301,7 @@
 
 
 
+
           <div class="recommendations-container">
             <ul id="searchRecommendations" class="recommendations"></ul>
           </div>
@@ -315,11 +316,12 @@
 
 
 
-
-    <div class="content" id="search" style="display: none;">
+      <div id="productContainer"></div>
+    
       <!-- Content for Search tab -->
 
 
+    </div>
       <div class="section-category-beef" >
         <div class="title-container">
           <h1>Beef Food</h1>
@@ -341,7 +343,7 @@
     </div>
 
 
-
+<div class="content" id="search" style="display: none;">
 
 
 

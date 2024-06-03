@@ -33,7 +33,7 @@ body:focus {
 /* CSS untuk Dark UI Aplikasi Restoran Elegan dengan Warna Emas */
 body {
   color: #ffffff;
-    font-family: Open Sans, Helvetica, sans-serif;
+    font-family: Roboto, Helvetica, sans-serif;
     background-color: #ffff;
     outline: none;
     background-color: #101010;
@@ -98,8 +98,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #101010;
-  border-bottom: 2px solid #ccc;
   padding: 10px 20px;
   position: sticky;
   top: 0;
@@ -483,7 +481,6 @@ section .scroll.text1{
   background-color: #101010;
   padding-bottom: 10px;
   width: 100%;
-  margin-bottom: 20px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -494,6 +491,20 @@ section .scroll.text1{
   height: 250px;
   backdrop-filter: blur(10px);
   filter: saturate(0%);
+}
+
+
+.banner::before {
+  content: "";
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(16,16,16);
+  background: rgb(16,16,16);
+background: linear-gradient(0deg, rgba(16,16,16,1) 0%, rgba(16,16,16,0) 100%);
 }
 
 .banner-tit {
@@ -542,6 +553,10 @@ section .scroll.text1{
   padding: 15px;
   margin-left: 20px;
   text-align: left;
+}
+
+.profile-info p {
+  font-size: 12px;
 }
 
 .profile-info h2,
@@ -686,7 +701,7 @@ section .scroll.text1{
   }
   
   .tab i.active {
-    background-color: #68C7C1;
+    background-color: #000000;
   }
   
   .tab.active {
@@ -747,8 +762,9 @@ section .scroll.text1{
   
   #categories,
   #favorites {
-    background-color: #99aaaa;
+    background-color: #000000;
     min-height: 200vh;
+    padding: 10px;
   }
   
   
@@ -1004,7 +1020,7 @@ section .scroll.text1{
   margin: 10px;
   margin-left: 30px;
   padding: 10px;
-  background-color: #68C7C1;
+  background-color: #000000;
   animation: bubbleChat 5s ease infinite;
   border: 3px dotted #fff;
   border-radius: 5px;
@@ -1029,6 +1045,61 @@ section .scroll.text1{
 article {}
 
 
+/* Container untuk card produk */
+#productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Gaya card produk */
+.twi-card {
+  width: 100%;
+  background-color: #000000;
+  border-left: 1px solid #101010;
+  padding: 16px;
+  margin-left: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Header card */
+.twi-card-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: -40px;
+}
+
+/* Avatar */
+.twi-card-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 12px;
+  object-fit: cover;
+}
+
+/* Nama pengguna */
+.twi-card-username {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Isi card */
+.twi-card-body {
+  margin-top: 12px;
+  background-color: #101010;
+  padding: 20px;
+  border-radius: var(--border);
+}
+
+/* Kutipan */
+.twi-card-quote {
+  font-size: 14px;
+  margin: 0;
+}
 
 
 

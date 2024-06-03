@@ -256,6 +256,65 @@ function determineZodiacIcon(birthDateString) {
   }
 }
 
+
+
+fetch('json/products.json')
+  .then(response => response.json())
+  .then(data => {
+    let products = data;
+
+    // Fungsi untuk menampilkan list card produk secara acak
+    function displayRandomProductCards() {
+      const container = document.getElementById('productContainer');
+      container.innerHTML = ''; // Bersihkan container sebelum menambahkan card baru
+
+      // Acak urutan produk
+      products = shuffleArray(products);
+
+      products.forEach(product => {
+        const productCardHTML = `
+          <div class="twi-card">
+            <div class="twi-card-header">
+              <img src="${product.foto}" alt="${product.nama}" class="twi-card-avatar" onerror="this.onerror=null;this.src='https://via.placeholder.com/150';">
+              <h3 class="twi-card-username">${product.nama}</h3>
+            </div>
+            <div class="twi-card-body">
+              <p class="twi-card-quote">${product.quote}</p>
+            </div>
+          </div>
+        `;
+        container.innerHTML += productCardHTML; // Tambahkan card baru ke container
+      });
+    }
+
+    // Tampilkan list card produk secara acak pertama kali
+    displayRandomProductCards();
+
+    // Tambahkan event listener untuk menampilkan detail produk ketika card diklik
+    document.getElementById('productContainer').addEventListener('click', event => {
+      const card = event.target.closest('.twi-card');
+      if (card) {
+        const productName = card.querySelector('.twi-card-username').textContent;
+        const selectedProduct = products.find(product => product.nama === productName);
+        displayProductDetails(selectedProduct);
+      }
+    });
+  })
+  .catch(error => {
+    console.error('Error fetching products:', error);
+  });
+
+// Fungsi untuk mengacak array
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+
+
 // Fungsi untuk menampilkan daftar produk
 function displayProducts(products) {
   productList.innerHTML = '';
@@ -389,7 +448,7 @@ function displayProductDetails(product) {
           </div>
           <div class="container-row">
             <div class="row">
-              <h2> Tanggal Lahir</h2>
+              <h2>Lahir</h2>
               <p>${product.tanggal_lahir}</p>
             </div>
             <div class="row">
@@ -626,3 +685,5 @@ function calculateAge(birthDateString) {
 
   return age;
 }
+
+
