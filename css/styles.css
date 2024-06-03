@@ -1,0 +1,1333 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oi&family=Purple+Purse&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Oi&family=Purple+Purse&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  user-select: none;
+}
+
+/* Menghilangkan efek tap biru pada elemen yang mendapatkan fokus */
+body:focus {
+  outline: none;
+}
+
+:root {
+  --gold-color: #FACA78;
+  --dark-bg: #000000;
+  --medium-bg: #794A3A;
+  --light-bg: #e5e5e5;
+  --grey-text: #794A3A;
+  --white: #794A3A;
+  --border: 10px;
+}
+
+/* CSS untuk Dark UI Aplikasi Restoran Elegan dengan Warna Emas */
+body {
+  color: #ffffff;
+    font-family: Open Sans, Helvetica, sans-serif;
+    background-color: #ffff;
+    outline: none;
+    background-color: #101010;
+    /* Menghilangkan efek focus ring saat tombol dalam fokus */
+}
+
+
+.container {
+  margin: 0 auto;
+  background-color: var(--dark-bg);
+    opacity: 0.8;
+    min-height: 150vh;
+    height: auto;
+    overflow: hidden;
+}
+
+.greeting-container h1 {
+  font-family: "Lobster Two", sans-serif;
+  font-size: 50px;
+  background: #fff;
+  background-image: radial-gradient(at 85.4% 36.8%, hsl(348, 61%, 77%) 0px, transparent 50%), radial-gradient(at 22.6% 78.0%, hsl(198, 54%, 74%) 0px, transparent 50%), radial-gradient(at 20.0% 27.8%, hsl(43, 90%, 75%) 0px, transparent 50%), radial-gradient(at 73.7% 85.9%, hsl(43, 90%, 75%) 0px, transparent 50%), radial-gradient(at 41.8% 55.2%, hsl(43, 90%, 75%) 0px, transparent 50%)
+}
+
+.grad-container {}
+
+.grad {
+  background-color: #000000;
+  max-width: 480px;
+}
+
+.record {
+  position: relative;
+  bottom: 250px;
+  width: 100%;
+  animation: spin 4s linear infinite;
+}
+
+.circle-text {
+  text-align: center;
+  position: relative;
+  top: -25em;
+  margin-bottom: -20em;
+  padding: 0px 10px;
+}
+
+.circle-text span {
+  font-family: "Oi", serif;
+  font-size: 30px;
+  color: #101010;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-fill-color: #e43d31;
+}
+
+.circle-text p {
+  -webkit-text-fill-color: #e43d31;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Gaya umum untuk kontainer pencarian */
+.header-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #101010;
+  border-bottom: 2px solid #ccc;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  max-width: 480px;
+}
+
+
+.header-left,
+.header-right {
+  font-size: 24px;
+  border: 1px solid;
+  border-radius: 50px;
+  padding: 3px 10px;
+}
+
+.header-center {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.header-center img {
+  max-width: 50px;
+}
+
+
+
+.con-seka {
+  padding: 25px;
+}
+
+.search-category-container {
+  justify-content: center;
+  display: inline-flex;
+    width: 100%;
+}
+
+.search {
+  margin-right: 10px;
+  background-color: #101010;
+  overflow: hidden;
+  width: 100%;
+  min-width: 100px;
+
+  border-radius: var(--border);
+}
+
+.search-form {
+  display: inline-flex;
+  overflow: hidden;
+  padding: 13px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  text-align: left;
+  background-color: #101010;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.category-filter {
+  border: none;
+  outline: none;
+  text-align: left;
+  background-color: #101010;
+  color: #fff;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  text-transform: uppercase;
+  border-radius: var(--border);
+}
+
+.recommendations-container {
+  position: relative;
+  top: -5vh;
+}
+
+.recommendations {
+  text-align: left;
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: var(--white);
+  max-height: 200px;
+  background-color: #101010;
+  z-index: 1;
+  display: none;
+  overflow-y: scroll;
+
+  margin: 25px;
+}
+
+.recommendations li:hover {
+  background-color: #fa7634;
+}
+
+.recommendations li {
+  display: flex;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 0.5px solid #fff;
+  text-align: left;
+}
+
+.recommendations li:hover {
+  background-color: var();
+}
+
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(110px, 1fr));
+  position: relative;
+  margin: 20px;
+}
+
+.product-item {
+  margin: 5px;
+}
+
+
+
+/* Styles for the product card */
+
+.product-card {
+  text-align: center;
+  background-color: #101010;
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--border);
+}
+
+.shape-star {
+  color: #fff;
+  padding: 40px 30px;
+  position: relative;
+  right: -11vh;
+  top: -7vh;
+  margin-bottom: -30vh;
+  display: inline-block;
+  font-size: 12px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    border-radius: 5px;
+  background-image: url('https://cdn-icons-png.flaticon.com/256/10852/10852399.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.product-image {
+  max-width: 100%;
+  width: 100%;
+  width: 150px;
+  height: 180px;
+  flex-shrink: 0;
+  margin-bottom: 5px;
+  object-fit: cover;
+  border-radius: var(--border);
+  filter: grayscale(0%);
+  margin-top: 10px;
+}
+
+.product-image:hover {
+  filter: grayscale(0%);
+}
+
+.product-info-container {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.product-nama {
+  font-size: 20px;
+  margin: 0;
+  color: #fff;
+  text-align: left;
+  line-height: 1.4;
+  font-family: "Roboto", sans-serif;
+}
+
+.zodIcon img {
+  width: 20px;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-top: 5px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.product-info span {
+  display: flex;
+  align-items: center;
+}
+
+.star-icon {
+  color: var(--gold-color);
+  /* Warna ikon bintang */
+  margin-right: 5px;
+}
+
+.clock-icon {
+  color: var(--gold-color);
+  /* Warna ikon jam */
+  margin-right: 5px;
+}
+
+.container-details {
+  overflow: hidden;
+  position: fixed;
+    overflow-y: auto;
+    z-index: 999999999;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+    background-color: var(--dark-bg);
+    /* Untuk menempatkan di tengah secara horizontal */
+  }
+  
+  /* Animasi ketika hover pada bagian detail */
+  .student-details-section:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Responsif untuk layar kecil */
+  @media (max-width: 768px) {
+    .student-details-section {
+      flex: 1 1 100%;
+      /* Full width on small screens */
+    }
+  }
+  
+  
+  .header img {
+    width: 30px;
+  
+    float: left;
+  }
+  
+  .header p {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  
+  
+  
+  
+  .header-details {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 7;
+  }
+  
+  
+  .header-details .left {
+    flex: 1;
+    text-align: left;
+    text-decoration: none;
+  }
+  
+  .header-details .right {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .header-details a {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(26, 26, 26, 0.444);
+    padding: 15px 20px;
+    font-size: 15px;
+    border-radius: 50px;
+    backdrop-filter: blur(90px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  
+  .header-details .right a:last-child {
+    margin-left: 0;
+  }
+  
+  .product-details-new {
+    background-color: #000000;
+    padding-bottom: 4rem;
+}
+
+.product-details-new:before {}
+
+
+
+.profile-container {
+  background-color: #000000;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.banner {
+  background-image: url('https://i.pinimg.com/564x/8c/85/a9/8c85a98a445d87ec6d8c3a84fd7985cc.jpg');
+  background-size: cover;
+  height: 150px;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+}
+
+.banner img {
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid #2c2f33;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  object-fit: cover;
+  top: -50px;
+  margin-bottom: -50px;
+}
+
+.profile-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.profile-info h2,
+.profile-info h3,
+.profile-info p {
+  margin: 5px 0;
+}
+
+
+.extra-activities,
+.achievements,
+.activities,
+.description {
+  margin-top: 15px;
+}
+
+.profile-container h4 {
+  margin-bottom: 10px;
+}
+
+.extra-activities span,
+.achievements span,
+.activities span {
+  display: inline-block;
+  background-color: #101010;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 2px 5px;
+}
+
+
+
+.product-container {
+  display: flex;
+  /* Horizontal layout */
+  overflow-x: auto;
+}
+
+.container h1 {
+  font-size: 17px;
+  margin-left: 10px;
+  color: var(--white);
+}
+
+
+.product-card-ctg {
+
+  width: 250px;
+  /* Atur lebar kartu sesuai kebutuhan */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.product-image-ctg {
+  max-width: 100%;
+  width: 250px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.product-nama-ctg {
+  margin-top: 8px;
+  font-size: 17px;
+  color: var(--white);
+}
+
+.product-info-ctg {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--grey-text);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* Jumlah baris maksimum */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-container::-webkit-scrollbar {
+  width: 20px;
+}
+
+.product-card-ctg::-webkit-scrollbar-track {
+  background-color: var(--dark-bg);
+}
+
+.product-ctg::-webkit-scrollbar-thumb {
+  background-color: var(--dark-bg);
+  border-radius: 5px;
+}
+
+/* Gaya untuk elemen ".section-category" */
+.section-category-beef,
+.section-category-kategori1 {
+  margin-bottom: 20px;
+}
+
+/* Gaya untuk elemen ".title-container" */
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  /* Mengatur elemen pada ujung kiri dan kanan */
+  align-items: center;
+  /* Mengatur elemen secara vertikal berada di tengah */
+}
+
+/* Gaya untuk elemen "See All" */
+.see-all {
+  font-size: 14px;
+  color: var(--gold-color);
+  margin-right: 10px;
+}
+
+#tabs {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #101010;
+    display: flex;
+    justify-content: space-around;
+    z-index: 999;
+    padding: 10px;
+    max-width: 480px;
+  }
+  
+  .tab {
+    color: #777;
+    text-align: center;
+    min-width: 150px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab i {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .tab i.active {
+    background-color: #68C7C1;
+  }
+  
+  .tab.active {
+    color: #ccc;
+  position: relative;
+}
+
+.memories-album-container {
+  background-color: #101010;
+  width: 100%;
+}
+
+.memories-album {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+}
+
+.memories-album h1 {
+  font-family: "Oi", serif;
+  font-size: 30px;
+  color: #101010;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #E02F2C;
+  -webkit-text-fill-color: #101010;
+}
+
+#categoryButtons {
+  margin: 10px 20px;
+}
+
+.category-button {
+  font-family: "Roboto", sans-serif;
+  margin: 5px;
+  display: inline-block;
+  padding: 8px 16px;
+    background-color: #101010;
+  
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category-button:hover {
+    background-color: #101010;
+  }
+  
+  .category-button.active {
+    background-color: #E02F2C;
+  }
+  
+  #home {
+    min-height: 200vh;
+  }
+  
+  #categories,
+  #favorites {
+    background-color: #99aaaa;
+    min-height: 200vh;
+  }
+  
+  
+  .memories-search-container {
+  
+  
+    margin-bottom: 20px;
+    margin: 20px;
+}
+
+.memories-search {
+  width: 100%;
+  padding: 10px;
+  
+    font-size: 16px;
+    border-radius: 5px;
+    box-sizing: border-box;
+  outline: none;
+    background-color: #101010;
+  }
+  
+  .social-icon {
+    margin-top: 20px;
+    display: inline-block;
+    margin-left: 5px;
+  
+    border-radius: 50px;
+}
+
+.social-icon i {
+  font-size: 20px;
+  color: #555;
+  transition: color 0.3s ease;
+  padding: 10px 10px;
+}
+
+.social-icon:hover i {
+  color: #101010;
+}
+
+/* Gaya untuk daftar album */
+#albumList {
+  margin: 20px;
+}
+
+.album-item {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.album-item-container {
+  margin-top: 10px;
+  text-align: left;
+  border-radius: 5px;
+  width: 100%;
+  height: 362px;
+  padding: 1em;
+  color: #fff;
+  font-size: 16px;
+  background-size: 51% 100%;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(circle at 0 0%, rgba(255, 255, 224, 0) 19px, #101010 20px), radial-gradient(circle at 100% 60%, rgba(255, 255, 224, 0) 19px, #101010 20px);
+    background-position: top left, top right;
+  }
+  
+  .album-item:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+  }
+  
+  .album-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: "Roboto", sans-serif;
+    border: none;
+  }
+  
+  .album-artist {
+    font-size: 14px;
+  color: #666;
+  font-family: "Roboto", sans-serif;
+}
+
+.album-cover {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  background-color: #333333;
+  margin-bottom: 10px;
+
+  filter: saturate(0);
+}
+
+.album-cover:hover {
+  filter: saturate(100%);
+}
+
+.album-crit {
+  background-color: #101010;
+  color: #fff;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 3px dotted #fff;
+}
+
+/* Gaya untuk detail album */
+#albumDetails {
+  margin-top: 20px;
+}
+
+.album-details-container {
+  position: fixed;
+  max-width: 480px;
+  background-color: #101010;
+  top: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 99999;
+  overflow-y: scroll;
+}
+
+.album-details-button a {
+  padding: 10px;
+  color: #fff;
+
+  border-radius: 5px;
+  background-color: #101010;
+  font-size: 15px;
+}
+
+.album-details-button {
+  margin: 50px 20px;
+}
+
+
+.album-details {
+  margin: 20px;
+  padding: 20px;
+  background-color: #101010;
+
+  border-radius: 5px;
+}
+
+.album-details-title {
+  font-size: 24px;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.album-details-artist {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.album-details-description,
+.album-details-tanggal {
+  font-size: 16px;
+  margin-bottom: 5px;
+  background-color: #E02F2C;
+  color: #fff;
+  display: inline-block;
+}
+
+.album-details-cover {
+  width: 100%;
+  border-radius: 5px;
+    margin-top: 20px;
+    object-fit: cover;
+    height: 200px;
+}
+
+#onboarding-container {}
+
+.onboarding-content {
+  display: none;
+  position: fixed;
+    z-index: 99999999999999999;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    max-width: 480px;
+    background-color: #101010;
+}
+
+.page-container {
+  padding: 20px;
+}
+
+.page {
+  display: none;
+  padding: 20px;
+}
+
+.page h1,
+.page h2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.page img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.page .content {
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.prev-btn,
+.next-btn,
+.close-btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  margin: 0 10px;
+}
+.prev-btn:hover,
+.next-btn:hover,
+.close-btn:hover {
+  background-color: #0056b3;
+}
+
+.quote-container {
+  position: relative;
+  width: 100%;
+  padding: 30px 20px;
+}
+
+.bubble-chat {
+  position: relative;
+  margin: 10px;
+  margin-left: 30px;
+  padding: 10px;
+  background-color: #68C7C1;
+  animation: bubbleChat 5s ease infinite;
+  border: 3px dotted #fff;
+  border-radius: 5px;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  justify-content: center;
+}
+
+.bubble-chat img {
+  width: 40px;
+  height: 40px;
+  float: left;
+  position: absolute;
+  top: -25px;
+  left: -20px;
+  object-fit: cover;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  z-index: 5;
+}
+
+article {}
+
+
+
+
+
+.button-container {
+  display: flex;
+  /* Menggunakan flexbox untuk menyusun tombol secara horizontal */
+}
+
+.button {
+  padding: 10px 50px;
+  /* Padding agar tombol terlihat lebih baik */
+  /* Jarak antara tombol */
+  margin: 20px;
+  background-color: #101010;
+
+  color: #fff;
+  /* Warna teks */
+  border-radius: 5px;
+  /* Membuat sudut tombol melengkung */
+  cursor: pointer;
+  /* Mengubah kursor saat diarahkan ke tombol */
+}
+
+.button:hover {
+  opacity: 90%;
+}
+
+
+
+
+.main {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+
+.main h3 {
+  font-size: 20px;
+  text-align: left;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
+
+.container-row {
+  display: flex;
+  justify-content: flex-end;
+  /* Mengubah dari space-around menjadi flex-start */
+  text-align: left;
+  padding: 10px;
+margin: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+    width: 100%;
+    background-color: #101010;
+    margin: 4px;
+    border-radius: var(--border);
+    padding: 10px;
+  }
+  
+  .row h2 {
+  
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    font-size: 15px;
+}
+
+.row h1 {
+  font-size: 10rem;
+  text-transform: uppercase;
+  font-family: 'Squada One', cursive;
+  color: #E02F2C;
+}
+.row h4 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #E02F2C;
+  text-transform: uppercase;
+  font-family: 'Squada One', cursive;
+  margin-top: 10px;
+}
+
+.row p,
+li {
+  color: #fff;
+  margin-right: 10px;
+  list-style: none;
+  font-size: 12px;
+  margin: 10px;
+}
+.row li {
+  list-style: circle;
+  margin-left: 25px;
+}
+
+.row img {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.con-share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+
+.share-button {
+  margin: 20px;
+  background-color: white;
+  color: #333;
+  border: 2px solid #333;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+    border-radius: 50px;
+    font-family: Roboto;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .share-button:hover {
+    background-color: #333;
+    color: white;
+  }
+  
+  .share-button i {
+    font-size: 18px;
+  }
+  
+  .image-det img {
+  
+    object-fit: cover;
+    height: auto;
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+  }
+  
+  .center {
+    display: flex;
+  }
+  
+  .numbers {
+    font-family: 'Rozha One', serif;
+    color: #7B1E17;
+    font-size: 15px;
+    position: relative;
+    margin: auto;
+  }
+  
+  sup {
+    position: relative;
+    font-size: 15px;
+    text-decoration: underline;
+  }
+  
+  .marks {
+    font-family: 'Kristi', cursive;
+    font-size: 4.5rem;
+    color: rgba(0, 0, 0, .4);
+  
+  }
+  
+  /* CSS untuk popup */
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+  align-items: center;
+    z-index: 9999;
+  }
+  
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  
+  
+  .concert-ticket {
+    background-color: #101010;
+    width: 300px;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    border: 4px solid #fff;
+    /* warna border retro */
+    position: relative;
+  }
+  
+  .ticket-header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-top: 1px solid #fff;
+    padding-top: 15px;
+    font-family: "Oi", serif;
+    font-size: 30px;
+    color: #101010;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #E02F2C;
+    -webkit-text-fill-color: #101010;
+  }
+  
+  .ticket-header h2 {
+    color: #4d4d4d;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .ticket-header b {
+    background-color: #E02F2C;
+    color: #f2f2f2;
+  }
+  
+  
+  
+  
+  
+  .logot {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .logot img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  
+    border-radius: 50px;
+  }
+  
+  .barcodee {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .barcodee img {
+    width: 100%;
+  
+    height: auto;
+  }
+  
+  .ticket-nick h1 {
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: 'Squada One', cursive;
+  }
+  
+  .ticket-desk p {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.container-code {
+  background-color: #101010;
+  border: 2px solid #333333;
+  border-radius: 10px;
+  margin: 0 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#imageList {
+  display: flex;
+  float: left;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#imageList img {
+  width: 50px;
+}
+
+#imageListPopup {
+  display: flex;
+  float: left;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 20px 0px;
+    width: 100%;
+  }
+  
+  #imageListPopup img {
+    width: 40px;
+  }
+  
+  .zodiac-icon-container img {
+    width: 50px;
+    background-color: #fa7634;
+    padding: 5px;
+    border-radius: 50px 50px;
+}
+
+@keyframes bubbleChat {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+                10%,
+                90% {
+                  transform: translateX(0);
+                  opacity: 1;
+                }
+
+                100% {
+                  transform: translateY(100%);
+                  opacity: 0;
+                }
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    max-width: 480px;
+  }
+
+                .container-details {
+                  max-width: 480px;
+                  /* Tambahkan max-width di sini */
+                }
+
+                #tabs {
+                  max-width: 480px;
+                  margin: 0 auto;
+                  /* Membuat container berada di tengah halaman */
+                  background-color: #101010;
+                  display: flex;
+                }
+
+}
+
+@media screen and (max-width: 500px) {
+  .record {
+    position: relative;
+    bottom: 220px;
+    width: 100%;
+  }
+
+                .circle-text {
+                  text-align: center;
+                  position: relative;
+                  top: -20em;
+                  z-index: 20;
+                  margin-bottom: -20em;
+                }
+}

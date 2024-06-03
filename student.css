@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oi&family=Purple+Purse&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Oi&family=Purple+Purse&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+#student-info {
+    border: 3px solid #000;
+    width: 500px;
+    /* Mengubah lebar ke 500px */
+    height: 316px;
+    /* Mengubah tinggi ke 316px */
+    background-color: #f47634;
+    font-family: 'Squada One', cursive;
+    margin: 0 auto;
+    overflow: hidden;
+    display: none;
+}
+
+.student-info-header {
+    background-color: #f9d997;
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+
+.inner-student-info {
+    margin: 20px;
+}
+
+.logo {
+    height: 40px;
+    /* Mengubah tinggi logo ke 40px */
+    width: 56.5px;
+    /* Mengubah lebar logo ke 56.5px */
+    float: left;
+    margin: auto;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.school-name {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    /* Mengubah ukuran font ke 15px */
+    color: #faf6e7;
+    color: #e43d31;
+    font-weight: 700;
+    margin-left: 3%;
+    float: left;
+}
+
+.motto {
+    color: #161616;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 8px;
+    /* Mengubah ukuran font ke 8px */
+    margin-left: 3%;
+    float: left;
+    letter-spacing: 1px;
+}
+
+.ribbon {
+    background-color: #99aaaa;
+    width: 100%;
+    padding: 4px;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
+.main-student-info {
+    background-color: #f47634;
+    width: 100%;
+    height: 67%;
+    display: flex;
+}
+
+.bio-container {
+    width: 47%;
+    height: 75%;
+    float: left;
+    margin: auto 0;
+    margin-left: 8%;
+    margin-right: 5%;
+}
+
+.chip {
+    background-color: #f8bf6c;
+    width: 15%;
+    /* Mengubah lebar chip ke 15% */
+    height: 15%;
+    /* Mengubah tinggi chip ke 15% */
+    float: left;
+    border-radius: 10px;
+    margin-left: 7%;
+    margin-right: 3.5%;
+}
+
+.number {
+    color: #f9d997;
+    margin: 2.25% 0;
+    margin-bottom: 0.5%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    /* Mengubah ukuran font ke 18px */
+    font-weight: 500;
+}
+
+.card-title {
+    color: #f9d997;
+    margin: 2.25% 0;
+    margin-top: 0.5%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 9.5px;
+    /* Mengubah ukuran font ke 9.5px */
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.student-name {
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto', serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1em;
+    /* Mengubah ukuran font ke 2em */
+    margin: 1.5% auto;
+    float: left;
+}
+
+.separator {
+    height: 1px;
+    /* Mengubah tinggi separator ke 1px */
+    width: 100%;
+    background-color: #000;
+    float: left;
+}
+
+.student-fields {
+    margin-top: 2.5%;
+    width: 50%;
+    float: left;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 9px;
+    /* Mengubah ukuran font ke 9px */
+}
+
+.student-content {
+    font-weight: 600;
+    color: #f9d997;
+    margin-top: 2.5%;
+    width: 50%;
+    float: left;
+    text-align: right;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    font-size: 9px;
+    /* Mengubah ukuran font ke 9px */
+}
+
+.image-container {
+    width: 27%;
+    height: 100%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 8%;
+    display: flex;
+}
+
+.image-container img {
+    margin: auto;
+    width: auto;
+    border-radius: 5px;
+    /* Mengubah radius sudut gambar ke 5px */
+    border: 2.5px solid #000;
+    height: 150px;
+    /* Mengubah tinggi gambar ke 150px */
+    object-fit: cover;
+}
+
+.id-number img {
+    width: 40%;
+    /* Mengubah lebar gambar ID ke 25% */
+    margin-top: 25px;
+    /* Mengubah jarak atas gambar ID ke 25px */
+    border-radius: 5px;
+    /* Mengubah radius sudut gambar ID ke 5px */
+    border: 2px solid #99aaaa;
+}

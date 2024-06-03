@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <div id="widget">
+        <div id="student-info">
+            <div class="student-info-header">
+                <div class="inner-student-info">
+                    <div class="logo">
+                        <img src="logokls.png">
+                    </div>
+                    <div class="school-name">
+                        Pletia High school
+                    </div>
+                    <div class="motto">non est ad luna mollis e terris via</div>
+                </div>
+            </div>
+            <div class="ribbon"></div>
+            <div class="main-student-info">
+                <div class="bio-container">
+                    <div class="student-name">Malia Farrington</div>
+                    <div class="separator"></div>
+                    <div class="student-fields">
+                        Date of Birth<br>
+                        Nationality<br>
+                        Academic Year<br>
+                        Luna Archetype<br>
+                        Squad Specialisation<br>
+                    </div>
+                    <div class="student-content">
+                        12/25/2001<br>
+                        Britannian<br>
+                        2019<br>
+                        Manipulator<br>
+                        Intelligence<br>
+                    </div>
+                    <div class="id-number">
+                        <img src="barcode.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="https://i.pinimg.com/564x/c7/fe/52/c7fe5203dd9cc8a8a59393b8a522426c.jpg">
+                </div>
+            </div>
+            <div class="ribbon"></div>
+        </div>
+
+        <br />    </div>
+        <input type="button" id="btnSave" value="Save PDF" />
+
+
+        <div class="greeting-container">
+            <h1 id="greeting"></h1>
+        </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script>
+        document.getElementById('btnSave').addEventListener('click', function () {
+            var element = document.getElementById('widget');
+            html2pdf(element, {
+                margin: 1,
+                filename: 'student_info.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 5 },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            });
+        });
+    </script>
+</body>
+</html>

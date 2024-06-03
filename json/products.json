@@ -1,0 +1,139 @@
+[{
+        "nama": "Serly Agustian",
+        "kelas": "12A",
+        "jurusan": "IPA",
+        "foto": "https://i.pinimg.com/564x/8c/85/a9/8c85a98a445d87ec6d8c3a84fd7985cc.jpg",
+        "tanggal_lahir": "2006-04-15",
+        "gender": "Perempuan",
+        "quote": "saya suka makan makanan yang enak",
+        "alamat": {
+            "jalan": "Jl. Merdeka No. 123",
+            "kota": "Jakarta",
+            "provinsi": "DKI Jakarta",
+            "kode_pos": "12345"
+        },
+        "extra": {
+            "angkatan": true,
+            "sekolah": true,
+            "osis": true,
+            "pramuka": false,
+            "pmr": true
+          },
+        "nomor_telepon": "+6281234567890",
+        "email": "john.doe@example.com",
+        "prestasi": [{
+                "judul": "Juara 1 Lomba Matematika Tingkat Kabupaten",
+                "tahun": 2023
+            },
+            {
+                "judul": "Peserta Olimpiade Sains Nasional",
+                "tahun": 2024
+            }
+        ],
+        "kegiatan": [
+            "Ketua OSIS",
+            "Anggota klub Robotik"
+        ],
+        "deskripsi": "John adalah siswa yang sangat berprestasi dan aktif dalam kegiatan sekolah. Dia memiliki minat yang besar dalam ilmu pengetahuan alam dan teknologi."
+    },
+    {
+        "nama": "Jane Chandra",
+        "kelas": "12B",
+        "jurusan": "IPS",
+        "foto": "https://i.pinimg.com/564x/c7/fe/52/c7fe5203dd9cc8a8a59393b8a522426c.jpg",
+        "tanggal_lahir": "2006-03-20",
+        "quote": "saya suka bermain game dan membaca buku",
+        "alamat": {
+            "jalan": "Jl. Mawar No. 456",
+            "kota": "Surabaya",
+            "provinsi": "Jawa Timur",
+            "kode_pos": "67890"
+        },
+        "extra": {
+            "angkatan": true,
+            "sekolah": true,
+            "osis": true,
+            "pramuka": false,
+            "pmr": true
+          },
+        "nomor_telepon": "+6289876543210",
+        "email": "jane.smith@example.com",
+        "prestasi": [{
+                "judul": "Finalis Lomba Debat Bahasa Inggris",
+                "tahun": 2023
+            },
+            {
+                "judul": "Pemenang Lomba Menulis Esai Sosial",
+                "tahun": 2024
+            }
+        ],
+        "kegiatan": [
+            "Anggota Paduan Suara",
+            "Sekretaris Kelas"
+        ],
+        "deskripsi": "Jane adalah siswi yang cerdas dan kreatif. Dia aktif dalam berbagai kegiatan ekstrakurikuler dan memiliki minat dalam seni dan sastra."
+    },
+    {
+        "nama": "Budi Santoso",
+        "kelas": "12C",
+        "jurusan": "IPA",
+        "foto": "https://i.pinimg.com/564x/7a/bc/de/7abcdedcba9876543210987654321ed.jpg",
+        "tanggal_lahir": "2006-05-10",
+        "gender": "Lelaki",
+        "quote": "Belajar adalah kunci menuju masa depan yang cerah.",
+        "alamat": {
+            "jalan": "Jl. Pahlawan No. 456",
+            "kota": "Bandung",
+            "provinsi": "Jawa Barat",
+            "kode_pos": "54321"
+        },
+        "nomor_telepon": "+6285678901234",
+        "email": "budi.santoso@example.com",
+        "prestasi": [
+            {
+                "judul": "Juara 1 Lomba Fisika Tingkat Sekolah",
+                "tahun": 2023
+            },
+            {
+                "judul": "Peserta Kompetisi Matematika Nasional",
+                "tahun": 2024
+            }
+        ],
+        "kegiatan": [
+            "Ketua Klub Sains",
+            "Anggota Tim Basket"
+        ],
+        "deskripsi": "Budi adalah siswa yang bersemangat dalam belajar sains dan aktif dalam kegiatan olahraga di sekolah."
+    },
+    {
+        "nama": "Siti Rahayu",
+        "kelas": "12D",
+        "jurusan": "IPS",
+        "foto": "https://i.pinimg.com/564x/1a/2b/3c/1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d.jpg",
+        "tanggal_lahir": "2006-02-18",
+        "quote": "Buku adalah jendela dunia.",
+        "alamat": {
+            "jalan": "Jl. Cendana No. 789",
+            "kota": "Yogyakarta",
+            "provinsi": "DIY",
+            "kode_pos": "45678"
+        },
+        "nomor_telepon": "+6289012345678",
+        "email": "siti.rahayu@example.com",
+        "prestasi": [
+            {
+                "judul": "Pemenang Lomba Menulis Cerpen Sekolah",
+                "tahun": 2023
+            },
+            {
+                "judul": "Finalis Lomba Debat Sosial",
+                "tahun": 2024
+            }
+        ],
+        "kegiatan": [
+            "Ketua Kelompok Studi Sejarah",
+            "Anggota Teater"
+        ],
+        "deskripsi": "Siti adalah siswi yang gemar membaca dan aktif dalam kegiatan seni serta sosial di sekolah."
+    }
+]

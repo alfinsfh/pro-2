@@ -1,0 +1,121 @@
+[{
+    "id": 1,
+    "title": "Pentas Seni Tari",
+    "category": "Ekstrakurikuler",
+    "tanggal": "2023-05-15",
+    "cover": "https://source.unsplash.com/featured/?dance",
+    "description": "Pentas seni tari tahunan yang menampilkan berbagai tarian tradisional dan modern dari siswa-siswa SMA."
+  },
+  {
+    "id": 2,
+    "title": "Lomba Debat Bahasa Inggris",
+    "category": "Ekstrakurikuler",
+    "tanggal": "2023-10-20",
+    "cover": "https://source.unsplash.com/featured/?debate",
+    "description": "Lomba debat bahasa Inggris antar sekolah-sekolah tingkat SMA se-kota, diikuti oleh siswa-siswa yang memiliki minat dalam debat."
+  },
+  {
+    "id": 3,
+    "title": "Pekan Olahraga",
+    "category": "Event",
+    "tanggal": "2023-09-10",
+    "cover": "https://source.unsplash.com/featured/?sports",
+    "description": "Acara tahunan yang menampilkan berbagai cabang olahraga antar kelas dan antar sekolah yang diadakan di SMA setempat."
+  },
+  {
+    "id": 4,
+    "title": "Konser Amal",
+    "category": "Event",
+    "tanggal": "2023-12-05",
+    "cover": "https://source.unsplash.com/featured/?concert",
+    "description": "Konser musik amal yang diselenggarakan oleh siswa-siswa SMA untuk mengumpulkan dana bagi yayasan sosial di lingkungan sekitar."
+  },
+  {
+    "id": 5,
+    "title": "Pameran Seni Rupa",
+    "category": "Ekstrakurikuler",
+    "tanggal": "2023-07-30",
+    "cover": "https://source.unsplash.com/featured/?art",
+    "description": "Pameran seni rupa yang menampilkan karya-karya siswa-siswa SMA dalam berbagai media, seperti lukisan, patung, dan fotografi."
+  },
+  {
+    "id": 6,
+    "title": "Lomba Paduan Suara",
+    "category": "Ekstrakurikuler",
+    "tanggal": "2023-11-12",
+    "cover": "https://source.unsplash.com/featured/?choir",
+    "description": "Lomba paduan suara antar sekolah yang menampilkan bakat-bakat vokal siswa-siswa SMA."
+  },
+  {
+    "id": 7,
+    "title": "Pentas Teater",
+    "category": "Ekstrakurikuler",
+    "tanggal": "2023-08-25",
+    "cover": "https://source.unsplash.com/featured/?theater",
+    "description": "Pentas teater yang menampilkan berbagai drama dan sandiwara yang dipersiapkan oleh siswa-siswa SMA."
+  },
+  {
+    "id": 8,
+    "title": "Lomba Pidato",
+    "category": "Ekstrakurikuler",
+    "tanggal": "2023-06-18",
+    "cover": "https://source.unsplash.com/featured/?speech",
+    "description": "Lomba pidato yang diadakan dalam rangka memperingati hari-hari besar nasional, diikuti oleh siswa-siswa SMA."
+  },
+  {
+    "id": 9,
+    "title": "Wisuda Tahunan",
+    "category": "Event",
+    "tanggal": "2023-05-30",
+    "cover": "https://source.unsplash.com/featured/?graduation",
+    "description": "Acara puncak untuk merayakan kelulusan siswa-siswa SMA setelah menyelesaikan pendidikan menengahnya."
+  },
+  {
+    "id": 10,
+    "title": "Seminar Kewirausahaan",
+    "category": "Event",
+    "tanggal": "2023-09-28",
+    "cover": "https://source.unsplash.com/featured/?business",
+    "description": "Seminar yang bertujuan untuk menginspirasi dan memberikan pengetahuan kepada siswa-siswa SMA tentang dunia kewirausahaan."
+  },
+  {
+    "id": 11,
+    "title": "Festival Band SMA",
+    "category": "Ekstrakurikuler",
+    "tanggal": "2023-07-10",
+    "cover": "https://source.unsplash.com/featured/?music",
+    "description": "Festival musik yang menampilkan penampilan band-band dari berbagai sekolah menengah atas dalam kompetisi dan pertunjukan."
+  },
+  {
+    "id": 12,
+    "title": "Lomba Futsal",
+    "category": "Ekstrakurikuler",
+    "tanggal": "2023-11-08",
+    "cover": "https://source.unsplash.com/featured/?soccer",
+    "description": "Lomba futsal antar kelas yang diadakan sebagai bagian dari rangkaian acara ekstrakurikuler dalam mempromosikan olahraga dan kebersamaan."
+  },
+  {
+    "id": 13,
+    "title": "Pertunjukan Seni Musik Klasik",
+    "category": "Ekstrakurikuler",
+    "tanggal": "2023-08-02",
+    "cover": "https://source.unsplash.com/featured/?classical-music",
+    "description": "Pertunjukan musik klasik yang menampilkan bakat-bakat musik siswa-siswa SMA dalam berbagai instrumen."
+  },
+  {
+    "id": 14,
+    "title": "Pekan Seni Budaya",
+    "category": "Event",
+    "tanggal": "2023-10-15",
+    "cover": "https://source.unsplash.com/featured/?cultural-art",
+    "description": "Pekan seni budaya yang menampilkan berbagai kegiatan seperti pameran seni, pertunjukan tradisional, dan kuliner khas daerah."
+  },
+  {
+    "id": 15,
+    "title": "Lomba Film Pendek",
+    "category": "Ekstrakurikuler",
+    "tanggal": "2023-06-25",
+    "cover": "https://source.unsplash.com/featured/?short-film",
+    "description": "Lomba pembuatan film pendek yang diikuti oleh siswa-siswa SMA yang memiliki minat dalam perfilman dan produksi video."
+  }
+]
