@@ -478,7 +478,7 @@ section .scroll.text1{
 }
 
 .profile-container {
-  background-color: #101010;
+  background-color: #000000;
   padding-bottom: 10px;
   width: 100%;
   overflow: hidden;
@@ -655,20 +655,68 @@ background: linear-gradient(0deg, rgba(16,16,16,1) 0%, rgba(16,16,16,0) 100%);
   margin-bottom: 20px;
 }
 
-/* Gaya untuk elemen ".title-container" */
-.title-container {
+
+.birthday-container {
   display: flex;
   justify-content: space-between;
-  /* Mengatur elemen pada ujung kiri dan kanan */
   align-items: center;
-  /* Mengatur elemen secara vertikal berada di tengah */
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+  border-radius: 20px;
+  max-height: 100px;
+  margin: 20px 30px;
+  position: relative;
+  margin-bottom: 35px;
 }
 
-/* Gaya untuk elemen "See All" */
-.see-all {
-  font-size: 14px;
-  color: var(--gold-color);
-  margin-right: 10px;
+.birthday-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+}
+
+.birthday-left h2 {
+  margin: 0;
+}
+
+.birthday-star-id {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.birthday-star {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.gar {
+  background-color: #f2f2f2;
+  padding: 40px 1px;
+  position: relative;
+  height: 100%;
+
+}
+
+.birthday-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 60px;
+  text-align: left;
+  line-height: 25px;
+}
+
+.birthday-date {
+  font-size: 20px;
+}
+
+.birthday-right p {
+  margin: 0;
+  font-size: 12px;
+  text-align: left;
 }
 
 #tabs {
@@ -707,6 +755,63 @@ background: linear-gradient(0deg, rgba(16,16,16,1) 0%, rgba(16,16,16,0) 100%);
   .tab.active {
     color: #ccc;
   position: relative;
+}
+
+.tabis-container {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #262626;
+  color: #ffffff;
+  background-color: #101010;
+  margin: 0px 20px;
+  border-radius: 50px;
+}
+.tabis {
+  border-radius: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #ccc;
+  font-weight: 600;
+  border: none;
+  background-color: transparent;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+.tabis.active {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.tabis.active svg {
+  color: #ffffff;
+  display: none;
+}
+
+.tabis svg {
+  color: #101010;
+  width: 24px;
+}
+.tabis i {
+  margin-bottom: 5px;
+}
+.tab-content {
+  display: none;
+  padding: 20px;
+  border-top: none;
+  background-color: #000000;
+}
+.tab-content.active {
+  display: block;
+}
+.tabis:hover {
+  color: #262626;
+}
+
+.tabril-content.active {
+  display: block;
 }
 
 .memories-album-container {

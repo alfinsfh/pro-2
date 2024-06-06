@@ -74,11 +74,11 @@
         "deskripsi": "Jane adalah siswi yang cerdas dan kreatif. Dia aktif dalam berbagai kegiatan ekstrakurikuler dan memiliki minat dalam seni dan sastra."
     },
     {
-        "nama": "Alfin Septi Firmansyah",
-        "kelas": "0",
-        "jurusan": "0",
-        "foto": "https://i.ibb.co.com/cyVf6t7/IMG-20240416-103055-430.jpg",
-        "tanggal_lahir": "2004-09-10",
+        "nama": "Budi Santoso",
+        "kelas": "12C",
+        "jurusan": "IPA",
+        "foto": "https://i.pinimg.com/564x/7a/bc/de/7abcdedcba9876543210987654321ed.jpg",
+        "tanggal_lahir": "2006-05-10",
         "gender": "Lelaki",
         "quote": "Belajar adalah kunci menuju masa depan yang cerah.",
         "alamat": {
@@ -88,7 +88,7 @@
             "kode_pos": "54321"
         },
         "nomor_telepon": "+6285678901234",
-        "email": "alfin.santoso@example.com",
+        "email": "budi.santoso@example.com",
         "prestasi": [
             {
                 "judul": "Juara 1 Lomba Fisika Tingkat Sekolah",

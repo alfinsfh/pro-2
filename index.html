@@ -161,7 +161,7 @@
       </div>
     </div>
 
- 
+
 
     <div id="productDetails" class="product-details"></div>
 
@@ -253,39 +253,34 @@
             </div>
           </div>
 
-<div class="con-seka">
-          <div class="search-category-container">
-            <div class="search">
-              <form class="search-form">
-                <?xml version="1.0" ?><svg fill="none" height="24" stroke-width="1.5" viewBox="0 0 24 24" width="25"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M15.5 15.5L19 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-                  <path
-                    d="M5 11C5 14.3137 7.68629 17 11 17C12.6597 17 14.1621 16.3261 15.2483 15.237C16.3308 14.1517 17 12.654 17 11C17 7.68629 14.3137 5 11 5C7.68629 5 5 7.68629 5 11Z"
-                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" /></svg>
-                <input id="searchInput" type="text" name="search" placeholder="Cari Siswa" class="search-input">
-              </form>
+          <div class="con-seka">
+            <div class="search-category-container">
+              <div class="search">
+                <form class="search-form">
+                  <?xml version="1.0" ?><svg fill="none" height="24" stroke-width="1.5" viewBox="0 0 24 24" width="25"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.5 15.5L19 19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M5 11C5 14.3137 7.68629 17 11 17C12.6597 17 14.1621 16.3261 15.2483 15.237C16.3308 14.1517 17 12.654 17 11C17 7.68629 14.3137 5 11 5C7.68629 5 5 7.68629 5 11Z"
+                      stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                  <input id="searchInput" type="text" name="search" placeholder="Cari Siswa" class="search-input">
+                </form>
 
+              </div>
+              <select id="categoryFilter" class="category-filter">
+                <option value="">All</option>
+                <option value="beef">Beef</option>
+                <option value="Seafood">Seafood</option>
+                <!-- Add more options for other categories -->
+              </select>
             </div>
-            <select id="categoryFilter" class="category-filter">
-              <option value="">All</option>
-              <option value="beef">Beef</option>
-              <option value="Seafood">Seafood</option>
-              <!-- Add more options for other categories -->
-            </select>
           </div>
-</div>
 
 
 
 
 
-
-
-
-
-
-
+         
 
 
 
@@ -312,177 +307,177 @@
 
     <div class="content" id="categories" style="display: none;">
       <!-- Content for Categories tab -->
-   
+
 
 
 
       <div id="productContainer"></div>
-    
+
       <!-- Content for Search tab -->
 
 
-    </div>
-      <div class="section-category-beef" >
+
+      <div class="section-category-beef" style="display: none;">
         <div class="title-container">
           <h1>Beef Food</h1>
           <p class="see-all">See All</p>
         </div>
-        <div id="beefProducts" class="product-container"></div>
+        <div id="beefProducts" class="product-container" style="display: none;"></div>
       </div>
 
-      <div class="section-category-kategori1">
+      <div class="section-category-kategori1" style="display: none;">
         <div class="title-container">
           <h1>Seafood</h1>
           <p class="see-all">See All</p>
         </div>
-        <div id="seafoodProducts" class="product-container"></div>
+        <div id="seafoodProducts" class="product-container" style="display: none;"></div>
       </div>
-      <div id="alternateProductList" class="alternate-product-list"></div>
+      <div id="alternateProductList" class="alternate-product-list" style="display: none;"></div>
     </div>
 
-    </div>
+  </div>
 
 
-<div class="content" id="search" style="display: none;">
+  <div class="content" id="search" style="display: none;">
 
 
+  </div>
 
 
-
-    <div class="content" id="favorites" style="display: none;">
-      <!-- Content for Favorites tab -->
-      <div class="memories-album-container">
-        <div class="memories-album">
-          <h1>Memories</h1>
-        </div>
-        <div class="memories-search-container">
-          <input type="text" class="memories-search" placeholder="Search for albums...">
-          <div class="social-icons">
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-          </div>
-        </div>
-
-        <div id="quoteContainer" class="quote-container">
-          <p id="quoteText" class="quote-text"></p>
+  <div class="content" id="favorites" style="display: none;">
+    <!-- Content for Favorites tab -->
+    <div class="memories-album-container">
+      <div class="memories-album">
+        <h1>Memories</h1>
+      </div>
+      <div class="memories-search-container">
+        <input type="text" class="memories-search" placeholder="Search for albums...">
+        <div class="social-icons">
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
         </div>
       </div>
 
-
-      <div id="categoryButtons"></div>
-      <div id="albumList"></div>
-      <div id="albumDetails"></div>
-
+      <div id="quoteContainer" class="quote-container">
+        <p id="quoteText" class="quote-text"></p>
+      </div>
     </div>
 
-    <script>
-      $(document).ready(function () {
-        $(".tab").click(function () {
-          if (!$(this).hasClass("active")) {
-            $(".tab").removeClass("active");
-            $(this).addClass("active");
-            $(".content").hide();
-            $("#" + $(this).data("tab")).fadeIn(300);
-          }
-        });
-        // Set the initial active tab
-        $(".tab[data-tab='home']").click();
+
+    <div id="categoryButtons"></div>
+    <div id="albumList"></div>
+    <div id="albumDetails"></div>
+
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $(".tab").click(function () {
+        if (!$(this).hasClass("active")) {
+          $(".tab").removeClass("active");
+          $(this).addClass("active");
+          $(".content").hide();
+          $("#" + $(this).data("tab")).fadeIn(300);
+        }
       });
+      // Set the initial active tab
+      $(".tab[data-tab='home']").click();
+    });
 
-      document.addEventListener('DOMContentLoaded', function () {
-        const greetingElement = document.getElementById('greeting');
-        const currentTime = new Date().getHours();
+    document.addEventListener('DOMContentLoaded', function () {
+      const greetingElement = document.getElementById('greeting');
+      const currentTime = new Date().getHours();
 
-        let greetingMessage = '';
+      let greetingMessage = '';
 
-        if (currentTime >= 4 && currentTime < 12) {
-          greetingMessage = 'Selamat Pagi mau masak apa hari ini?..';
-        } else if (currentTime >= 12 && currentTime < 18) {
-          greetingMessage = 'Selamat Siang';
-        } else if (currentTime >= 18 && currentTime < 21) {
-          greetingMessage = 'Selamat Sore';
+      if (currentTime >= 4 && currentTime < 12) {
+        greetingMessage = 'Selamat Pagi mau masak apa hari ini?..';
+      } else if (currentTime >= 12 && currentTime < 18) {
+        greetingMessage = 'Selamat Siang';
+      } else if (currentTime >= 18 && currentTime < 21) {
+        greetingMessage = 'Selamat Sore';
+      } else {
+        greetingMessage = 'Selamat Malam';
+      }
+
+      greetingElement.textContent = greetingMessage;
+    });
+  </script>
+  <script src="js/script.js"></script>
+  <script src="js/album.js"></script>
+  <script>
+    AOS.init();
+    // JavaScript to change the center image on scroll
+    window.addEventListener('scroll', function () {
+      var img = document.getElementById('center-image');
+      var scrolled = window.scrollY;
+
+      // Change the image source based on scroll position
+      if (scrolled > 100) {
+        img.src = 'favicon.png';
+      } else {
+        img.src = 'logokls.png';
+      }
+    });
+
+    let currentPage = 0;
+    const pages = document.querySelectorAll('.page');
+
+    function showPage(pageIndex) {
+      pages.forEach((page, index) => {
+        if (index === pageIndex) {
+          page.style.display = 'block';
         } else {
-          greetingMessage = 'Selamat Malam';
-        }
-
-        greetingElement.textContent = greetingMessage;
-      });
-    </script>
-    <script src="js/script.js"></script>
-    <script src="js/album.js"></script>
-    <script>
-      AOS.init();
-      // JavaScript to change the center image on scroll
-      window.addEventListener('scroll', function () {
-        var img = document.getElementById('center-image');
-        var scrolled = window.scrollY;
-
-        // Change the image source based on scroll position
-        if (scrolled > 100) {
-          img.src = 'favicon.png';
-        } else {
-          img.src = 'logokls.png';
+          page.style.display = 'none';
         }
       });
+    }
 
-      let currentPage = 0;
-      const pages = document.querySelectorAll('.page');
-
-      function showPage(pageIndex) {
-        pages.forEach((page, index) => {
-          if (index === pageIndex) {
-            page.style.display = 'block';
-          } else {
-            page.style.display = 'none';
-          }
-        });
+    function nextPage() {
+      if (currentPage < pages.length - 1) {
+        currentPage++;
+        showPage(currentPage);
       }
+    }
 
-      function nextPage() {
-        if (currentPage < pages.length - 1) {
-          currentPage++;
-          showPage(currentPage);
+    function prevPage() {
+      if (currentPage > 0) {
+        currentPage--;
+        showPage(currentPage);
+      }
+    }
+
+    function closeOnboarding() {
+      // Sembunyikan kotak onboarding
+      document.getElementById('onboarding-container').style.display = 'none';
+    }
+
+    // Tampilkan halaman pertama secara default
+    showPage(currentPage);
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <script>
+    document.getElementById('btnSave').addEventListener('click', function () {
+      var element = document.getElementById('widget');
+      html2pdf(element, {
+        margin: 1,
+        filename: 'student_info.pdf',
+        image: {
+          type: 'jpeg',
+          quality: 0.98
+        },
+        html2canvas: {
+          scale: 5
+        },
+        jsPDF: {
+          unit: 'in',
+          format: 'letter',
+          orientation: 'portrait'
         }
-      }
-
-      function prevPage() {
-        if (currentPage > 0) {
-          currentPage--;
-          showPage(currentPage);
-        }
-      }
-
-      function closeOnboarding() {
-        // Sembunyikan kotak onboarding
-        document.getElementById('onboarding-container').style.display = 'none';
-      }
-
-      // Tampilkan halaman pertama secara default
-      showPage(currentPage);
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
-    <script>
-      document.getElementById('btnSave').addEventListener('click', function () {
-        var element = document.getElementById('widget');
-        html2pdf(element, {
-          margin: 1,
-          filename: 'student_info.pdf',
-          image: {
-            type: 'jpeg',
-            quality: 0.98
-          },
-          html2canvas: {
-            scale: 5
-          },
-          jsPDF: {
-            unit: 'in',
-            format: 'letter',
-            orientation: 'portrait'
-          }
-        });
       });
-    </script>
+    });
+  </script>
 
 </body>
 

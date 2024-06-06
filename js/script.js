@@ -430,72 +430,122 @@ function displayProductDetails(product) {
             </div>
           </section>
       </div>
+
+      <div class="rang">
       <img src="${product.foto}" alt="${product.nama}" alt="Profile Picture" class="profile-pic" onerror="this.onerror=null;this.src='https://via.placeholder.com/150';">
       <div class="profile-info">
       <h3>${product.nama}</h3>
       <p>${product.deskripsi}</p>
-      <div class="con-share">
-      <button class="share-button">
-          <i class="fas fa-share"></i> Share
-      </button>
+      </div>
+      <div class="birthday-container">
+      <div class="birthday-left">
+          <h2>GEMINI</h2>
+          <div class="birthday-star-id">
+              <span class="birthday-star">★</span>
+              <span class="birthday-id">1${product.tanggal_lahir}</span>
+          </div>
+      </div>
+      <div class="gar"></div>
+      <div class="birthday-right">
+          <span class="birthday-date">Tanggal</span>
+          <p>${product.alamat.kota}, ${product.alamat.provinsi},</p>
+      </div>
   </div>
 
   </div>
-     
-          </div>
-          <div class="main">
-          <div class="container-row">
-          </div>
-          <div class="container-row">
-            <div class="row">
-              <h2>Lahir</h2>
-              <p>${product.tanggal_lahir}</p>
-            </div>
-            <div class="row">
-              <h2> Alamat</h2>
-              <p>${product.alamat.jalan}, ${product.alamat.kota}, ${product.alamat.provinsi}, ${product.alamat.kode_pos}</p>
-            </div>
-          </div>
-          <div class="container-row">
-            <div class="row">
-              <h2>Prestasi</h2>
-              <ul>
-                ${product.prestasi.map(prestasi => `<li>${prestasi.judul} (${prestasi.tahun})</li>`).join('')}
-              </ul>
-            </div>
-            <div class="row">
-              <h2>Kegiatan</h2>
-              <ul>
-                ${product.kegiatan.map(kegiatan => `<li>${kegiatan}</li>`).join('')}
-              </ul>
-            </div>
-          </div>
-          <div class="container-row">
-            <div class="row">
-              <h2>Barcode</h2>
-              <img src="barcode.png" alt="" srcset="">
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="tabis-container">
+  <div class="tabis active" onclick="openTab('tab1', this)"><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+    <path d="M2 18C2 16.4596 2 15.6893 2.34673 15.1235C2.54074 14.8069 2.80693 14.5407 3.12353 14.3467C3.68934 14 4.45956 14 6 14C7.54044 14 8.31066 14 8.87647 14.3467C9.19307 14.5407 9.45926 14.8069 9.65327 15.1235C10 15.6893 10 16.4596 10 18C10 19.5404 10 20.3107 9.65327 20.8765C9.45926 21.1931 9.19307 21.4593 8.87647 21.6533C8.31066 22 7.54044 22 6 22C4.45956 22 3.68934 22 3.12353 21.6533C2.80693 21.4593 2.54074 21.1931 2.34673 20.8765C2 20.3107 2 19.5404 2 18Z" stroke="currentColor" stroke-width="1.5" />
+    <path d="M14 18C14 16.4596 14 15.6893 14.3467 15.1235C14.5407 14.8069 14.8069 14.5407 15.1235 14.3467C15.6893 14 16.4596 14 18 14C19.5404 14 20.3107 14 20.8765 14.3467C21.1931 14.5407 21.4593 14.8069 21.6533 15.1235C22 15.6893 22 16.4596 22 18C22 19.5404 22 20.3107 21.6533 20.8765C21.4593 21.1931 21.1931 21.4593 20.8765 21.6533C20.3107 22 19.5404 22 18 22C16.4596 22 15.6893 22 15.1235 21.6533C14.8069 21.4593 14.5407 21.1931 14.3467 20.8765C14 20.3107 14 19.5404 14 18Z" stroke="currentColor" stroke-width="1.5" />
+    <path d="M2 6C2 4.45956 2 3.68934 2.34673 3.12353C2.54074 2.80693 2.80693 2.54074 3.12353 2.34673C3.68934 2 4.45956 2 6 2C7.54044 2 8.31066 2 8.87647 2.34673C9.19307 2.54074 9.45926 2.80693 9.65327 3.12353C10 3.68934 10 4.45956 10 6C10 7.54044 10 8.31066 9.65327 8.87647C9.45926 9.19307 9.19307 9.45926 8.87647 9.65327C8.31066 10 7.54044 10 6 10C4.45956 10 3.68934 10 3.12353 9.65327C2.80693 9.45926 2.54074 9.19307 2.34673 8.87647C2 8.31066 2 7.54044 2 6Z" stroke="currentColor" stroke-width="1.5" />
+    <path d="M14 6C14 4.45956 14 3.68934 14.3467 3.12353C14.5407 2.80693 14.8069 2.54074 15.1235 2.34673C15.6893 2 16.4596 2 18 2C19.5404 2 20.3107 2 20.8765 2.34673C21.1931 2.54074 21.4593 2.80693 21.6533 3.12353C22 3.68934 22 4.45956 22 6C22 7.54044 22 8.31066 21.6533 8.87647C21.4593 9.19307 21.1931 9.45926 20.8765 9.65327C20.3107 10 19.5404 10 18 10C16.4596 10 15.6893 10 15.1235 9.65327C14.8069 9.45926 14.5407 9.19307 14.3467 8.87647C14 8.31066 14 7.54044 14 6Z" stroke="currentColor" stroke-width="1.5" />
+</svg></i> Profile</div>
+  <div class="tabis" onclick="openTab('tab2', this)"><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+    <path d="M22 14V10C22 6.22876 22 4.34315 20.8284 3.17157C19.6569 2 17.7712 2 14 2H12C8.22876 2 6.34315 2 5.17157 3.17157C4 4.34315 4 6.22876 4 10V14C4 17.7712 4 19.6569 5.17157 20.8284C6.34315 22 8.22876 22 12 22H14C17.7712 22 19.6569 22 20.8284 20.8284C22 19.6569 22 17.7712 22 14Z" stroke="currentColor" stroke-width="1.5" />
+    <path d="M5 6L2 6M5 12H2M5 18H2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M17.5 7L13.5 7M15.5 11H13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M9 22L9 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg></i> Photos</div>
+</div>
+
+<div id="tab1" class="tab-content active">
+  <div class="main">
+  <div class="container-row">
   </div>
- 
-         
-      </article>
-      <div class="container-code">
-        <div class="button-container">
-        <ul id="imageList"></ul>
-        </div>
-        <div class="zodiac-icon-container">
-        <img id="zodiacIcon" src="" alt="Zodiac Icon">
-      </div>
-      </div>
+  <div class="container-row">
+    <div class="row">
+      <h2>Lahir</h2>
+      <p>${product.tanggal_lahir}</p>
     </div>
+    <div class="row">
+      <h2> Alamat</h2>
+      <p>${product.alamat.jalan}, ${product.alamat.kota}, ${product.alamat.provinsi}, ${product.alamat.kode_pos}</p>
+    </div>
+  </div>
+  <div class="container-row">
+    <div class="row">
+      <h2>Prestasi</h2>
+      <ul>
+        ${product.prestasi.map(prestasi => `<li>${prestasi.judul} (${prestasi.tahun})</li>`).join('')}
+      </ul>
+    </div>
+    <div class="row">
+      <h2>Kegiatan</h2>
+      <ul>
+        ${product.kegiatan.map(kegiatan => `<li>${kegiatan}</li>`).join('')}
+      </ul>
+    </div>
+  </div>
+  <div class="container-row">
+    <div class="row">
+      <h2>Barcode</h2>
+      <img src="barcode.png" alt="" srcset="">
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+ 
+</article>
+<div class="container-code">
+<div class="button-container">
+<ul id="imageList"></ul>
+</div>
+<div class="zodiac-icon-container">
+<img id="zodiacIcon" src="" alt="Zodiac Icon">
+</div>
+</div>
+</div>
+</div>
+
+<div id="tab2" class="tab-content">
+<div id="extra-show"></div>
+
+</div>
+
+<div id="tab3" class="tab-content">
+  <h2>Videos Content</h2>
+  <p>Ini adalah konten video-video.</p>
+</div>
+          </div>
+        
   </div>
 </div>
 
 
 `;
+
+  // Check if extra property exists and it's an object
+  if (product.extra && typeof product.extra === 'object') {
+    // Loop through each key-value pair in the extra object
+    for (const [key, value] of Object.entries(product.extra)) {
+      // If the value is true, display the corresponding extra card
+      if (value === true) {
+        displayExtraCard(key);
+      }
+    }
+  }
 
   const zodiacIcon = determineZodiacIcon(product.tanggal_lahir);
   const zodiacIconElement = document.getElementById('zodiacIcon');
@@ -536,6 +586,35 @@ function displayProductDetails(product) {
   });
 
 
+// Function to display extra card based on the key
+function displayExtraCard(key) {
+  // Define the card content based on the key
+  let cardContent = '';
+  switch (key) {
+    case 'angkatan':
+      cardContent = '<div class="extra-card">Angkatan Card</div>';
+      break;
+    case 'sekolah':
+      cardContent = '<div class="extra-card">Sekolah Card</div>';
+      break;
+    case 'osis':
+      cardContent = '<div class="extra-card">Osis Card</div>';
+      break;
+    case 'pramuka':
+      cardContent = '<div class="extra-card">Pramuka Card</div>';
+      break;
+    case 'pmr':
+      cardContent = '<div class="extra-card">PMR Card</div>';
+      break;
+    default:
+      // Do nothing for unknown keys
+      break;
+  }
+
+  // Append the card content to the specified container
+  const extraShowContainer = document.getElementById('extra-show');
+  extraShowContainer.insertAdjacentHTML('beforeend', cardContent);
+}
 
   // Fungsi untuk menampilkan popup
   function showPopup() {
@@ -687,3 +766,15 @@ function calculateAge(birthDateString) {
 }
 
 
+function openTab(tabId, tab) {
+  var tabContents = document.getElementsByClassName("tab-content");
+  for (var i = 0; i < tabContents.length; i++) {
+    tabContents[i].classList.remove("active");
+  }
+  var tabs = document.getElementsByClassName("tabis");
+  for (var i = 0; i < tabs.length; i++) {
+    tabs[i].classList.remove("active");
+  }
+  document.getElementById(tabId).classList.add("active");
+  tab.classList.add("active");
+}
