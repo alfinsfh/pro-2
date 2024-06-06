@@ -45,7 +45,7 @@ body {
   margin: 0 auto;
   background-color: var(--dark-bg);
     opacity: 0.8;
-    min-height: 150vh;
+    min-height: 200vh;
     height: auto;
     overflow: hidden;
 }
@@ -655,6 +655,71 @@ background: linear-gradient(0deg, rgba(16,16,16,1) 0%, rgba(16,16,16,0) 100%);
   margin-bottom: 20px;
 }
 
+.org-card {
+  width: 100%;
+  background-color: #101010;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+}
+
+.org-icon {
+  position: relative;
+  overflow: hidden;
+}
+
+.org-icon img {
+  width: 100%;
+  height: auto;
+}
+
+.org-profile {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #000000;
+  object-fit: cover;
+}
+
+.org-profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.org-content {
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.org-name {
+  margin-top: 0;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.org-description {
+  color: #ffffff;
+}
+
+.org-icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #000000, rgba(240, 240, 240, 0));
+  z-index: 0;
+}
+
 
 .birthday-container {
   display: flex;
@@ -768,6 +833,7 @@ background: linear-gradient(0deg, rgba(16,16,16,1) 0%, rgba(16,16,16,0) 100%);
 }
 .tabis {
   border-radius: 50px;
+  font-size: 12px;
   width: 100%;
   display: flex;
   justify-content: center;

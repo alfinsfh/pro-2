@@ -1,90 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Profile</title>
-    <style>
-        body {
-            background-color: #1e1e1e;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-        }
-        .profile-container {
-            background-color: #2c2f33;
-            width: 90%;
-            max-width: 400px;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-        .banner {
-            background-image: url('https://i.pinimg.com/564x/8c/85/a9/8c85a98a445d87ec6d8c3a84fd7985cc.jpg');
-            background-size: cover;
-            height: 150px;
-        }
-        .profile-pic {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: 4px solid #2c2f33;
-            margin-top: -50px;
-            margin-left: 15px;
-        }
-        .profile-info {
-            padding: 15px;
-        }
-        .profile-info h2, .profile-info h3, .profile-info p {
-            margin: 5px 0;
-        }
-        .extra-activities, .achievements, .activities, .description {
-            margin-top: 15px;
-        }
-        .extra-activities span, .achievements span, .activities span {
-            display: inline-block;
-            background-color: #7289da;
-            padding: 5px 10px;
-            border-radius: 5px;
-            margin: 2px 5px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organisasi Card</title>
+  <style>
+    .org-card {
+      width: 300px;
+      background-color: #000000;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      color: #fff;
+    }
+
+    .org-icon {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .org-icon img {
+      width: 100%;
+      height: auto;
+    }
+
+    .org-profile {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 4px solid #fff;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #000000;
+      object-fit: cover;
+    }
+
+    .org-profile img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .org-content {
+      padding: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .org-name {
+      margin-top: 0;
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    .org-description {
+      color: #ffffff;
+    }
+
+    .org-icon::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to top, #000000, rgba(240, 240, 240, 0));
+      z-index: 0;
+    }
+  </style>
 </head>
 <body>
-    <div class="profile-container">
-        <div class="banner"></div>
-        <img src="https://i.pinimg.com/564x/8c/85/a9/8c85a98a445d87ec6d8c3a84fd7985cc.jpg" alt="Profile Picture" class="profile-pic">
-        <div class="profile-info">
-            <h2>Serly Agustian</h2>
-            <h3>Kelas: 12A, Jurusan: IPA</h3>
-            <p>Tanggal Lahir: 2006-04-15, Gender: Perempuan</p>
-            <p>Quote: "saya suka makan makanan yang enak"</p>
-            <p>Alamat: Jl. Merdeka No. 123, Jakarta, DKI Jakarta, 12345</p>
-            <p>Nomor Telepon: +6281234567890, Email: john.doe@example.com</p>
-            <div class="extra-activities">
-                <h4>Extra Activities</h4>
-                <span>Angkatan</span><span>Sekolah</span><span>OSIS</span><span>PMR</span>
-            </div>
-            <div class="achievements">
-                <h4>Prestasi</h4>
-                <span>Juara 1 Lomba Matematika Tingkat Kabupaten (2023)</span>
-                <span>Peserta Olimpiade Sains Nasional (2024)</span>
-            </div>
-            <div class="activities">
-                <h4>Kegiatan</h4>
-                <span>Ketua OSIS</span><span>Anggota klub Robotik</span>
-            </div>
-            <div class="description">
-                <h4>Deskripsi</h4>
-                <p>John adalah siswa yang sangat berprestasi dan aktif dalam kegiatan sekolah. Dia memiliki minat yang besar dalam ilmu pengetahuan alam dan teknologi.</p>
-            </div>
-        </div>
+  <div class="org-card">
+    <div class="org-icon">
+      <img src="barcode.png" alt="Organization Background">
+      <div class="org-profile">
+        <img src="barcode.png" alt="Organization Profile">
+      </div>
     </div>
+    <div class="org-content">
+      <h2 class="org-name">Nama Organisasi</h2>
+      <p class="org-description">Deskripsi Organisasi Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
 </body>
 </html>

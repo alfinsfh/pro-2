@@ -502,13 +502,7 @@ function displayProductDetails(product) {
       <img src="barcode.png" alt="" srcset="">
     </div>
   </div>
-</div>
-</div>
-</div>
-
- 
-</article>
-<div class="container-code">
+</div><div class="container-code">
 <div class="button-container">
 <ul id="imageList"></ul>
 </div>
@@ -516,6 +510,12 @@ function displayProductDetails(product) {
 <img id="zodiacIcon" src="" alt="Zodiac Icon">
 </div>
 </div>
+</div>
+</div>
+
+ 
+</article>
+
 </div>
 </div>
 
@@ -592,7 +592,21 @@ function displayExtraCard(key) {
   let cardContent = '';
   switch (key) {
     case 'angkatan':
-      cardContent = '<div class="extra-card">Angkatan Card</div>';
+      cardContent = `
+      <div class="org-card">
+        <div class="org-icon">
+          <img src="barcode.png" alt="Organization Background">
+          <div class="org-profile">
+            <img src="barcode.png" alt="Organization Profile">
+          </div>
+        </div>
+        <div class="org-content">
+          <h2 class="org-name">Nama Organisasi</h2>
+          <p class="org-description">Deskripsi Organisasi Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+
+`;
       break;
     case 'sekolah':
       cardContent = '<div class="extra-card">Sekolah Card</div>';
